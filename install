@@ -1,0 +1,6 @@
+# Vim
+mkdir -p ~/.vim/bundle
+cp -f .vimrc ~/.vimrc 
+if [ -d "~/.vim/bundle/ctrlp.vim" ]; then
+	git clone https://github.com/kien/ctrlp.vim.git ~/.vim/bundle/ctrlp.vim
+fi
