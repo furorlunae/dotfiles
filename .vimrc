@@ -5,6 +5,10 @@ set ignorecase
 set incsearch
 set hlsearch
 
+" Folds
+set foldmethod=marker
+set foldcolumn=3
+
 " switch unsaved/unnamed buffers
 set hidden
 
