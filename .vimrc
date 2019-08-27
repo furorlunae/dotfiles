@@ -12,6 +12,10 @@ set foldcolumn=3
 " Swap
 set noswapfile
 
+" Whitespace
+set tabstop=4
+set shiftwidth=4
+
 " switch unsaved/unnamed buffers
 set hidden
 
