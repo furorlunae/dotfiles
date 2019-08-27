@@ -9,6 +9,9 @@ set hlsearch
 set foldmethod=marker
 set foldcolumn=3
 
+" Swap
+set noswapfile
+
 " switch unsaved/unnamed buffers
 set hidden
 
