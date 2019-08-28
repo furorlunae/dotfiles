@@ -1,6 +1,19 @@
 # Vim
-mkdir -p ~/.vim/bundle
+mkdir -p ~/.vim/autoload ~/.vim/bundle
 cp -f .vimrc ~/.vimrc 
-if [ -d "~/.vim/bundle/ctrlp.vim" ]; then
+
+[[ ! -d "~/.vim/autoload/pathogen.vim" ]] && \
+	curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+[[ ! -d "~/.vim/bundle/ctrlp.vim" ]] && \
 	git clone https://github.com/kien/ctrlp.vim.git ~/.vim/bundle/ctrlp.vim
-fi
+
+[[ ! -d "~/.vim/bundle/Zenburn" ]] && \
+	git clone https://github.com/jnurmine/Zenburn.git ~/.vim/bundle/Zenburn
+
+[[ ! -d "~/.vim/bundle/vim-airline" ]] && \
+	git clone https://github.com/vim-airline/vim-airline ~/.vim/bundle/vim-airline
+
+[[ ! -d "~/.vim/bundle/vim-airline-themes" ]] && \
+	git clone https://github.com/vim-airline/vim-airline-themes ~/.vim/bundle/vim-airline-themes
+
